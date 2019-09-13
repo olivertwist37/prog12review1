@@ -1,5 +1,6 @@
-int x,y,vx,vy,d,w,p;
+int x,y,vx,vy,d,p;
 boolean a,n;
+float w;
 void setup(){
   size (1000,800);
   x=500;
@@ -15,8 +16,9 @@ void draw(){
     
  w=random(0,10);
     
-    n=false;
+
     text(""+w,200,200);
+    n=false;
   }
 
   
@@ -27,6 +29,9 @@ void draw(){
   //red
     fill(250,0,0);
     ellipse(800,700,d,d);
+    //checking clicking
+   
+    
   
     //scoreboard
   textSize(20);
@@ -35,6 +40,23 @@ void draw(){
   //text
   textSize(150);
   text("blue",350,400);
+  
+  
+}
+void mouseClicked(){
+   if (dist(mouseX,mouseY,200,700)<d/2){
+      
+      
+      
+    }
+    
+     if (dist(mouseX,mouseY,200,700)<d/2){
+      
+      
+      
+    }
+  
+  
   
   
 }
